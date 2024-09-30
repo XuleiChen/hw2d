@@ -8,7 +8,7 @@ import matplotlib.pyplot as plt
 import os
 
 step_size: float = 0.02
-end_time: float = 70
+end_time: float = 100
 initial_time: float = 0
 grid_pts: int = 1024
 k0: float = 0.15
@@ -39,16 +39,11 @@ def run(
     # Run simulation
     def run_iterations(carry, i):
         density, omega, phi = carry
-        # 进行一次rk4_step更新
         density, omega, phi = hw.rk4_step(dt=step_size, dx=dx, pn=phi, n=density, o=omega)
-        # 返回新的carry和输出值，其中输出值记录每个step的density, omega和phi
         return (density, omega, phi),(density, omega, phi)
 
-    # 使用lax.scan进行迭代
     initial_carry = (density, omega, phi)
     final_carry, outputs = lax.scan(run_iterations, initial_carry, jnp.arange(steps))
-
-    # 提取最后的记录
     density_values, omega_values, phi_values =outputs
 
     return phi_values, density_values, omega_values
@@ -57,7 +52,6 @@ phi_values, density_values, omega_values=run(
     omega=initial_omega, phi=initial_phi,density=initial_density,steps=steps
 )
 
-# Plot the result
 # Extracting the last step values
 final_phi = phi_values[-1]
 final_omega = omega_values[-1]
@@ -90,17 +84,11 @@ def plot_final_fields(final_omega, final_phi, final_density,save_path=None):
         plt.show()
 
 
-# Define the folder name
 folder_name = "results"
-
-# Create the folder if it doesn't exist
 if not os.path.exists(folder_name):
     os.makedirs(folder_name)
-
-# Save results as .npy files inside the folder
 jnp.save(os.path.join(folder_name, 'phi_values.npy'), phi_values)
 jnp.save(os.path.join(folder_name, 'density_values.npy'), density_values)
 jnp.save(os.path.join(folder_name, 'omega_values.npy'), omega_values)
 
-# Save the plot as a PNG file inside the folder
 plot_final_fields(final_omega, final_phi, final_density, save_path=os.path.join(folder_name, "final_fields.png"))
