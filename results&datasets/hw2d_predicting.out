@@ -21,7 +21,18 @@ Global seed set to 397157
 /ext3/miniforge3/lib/python3.10/site-packages/torch/utils/data/dataloader.py:563: UserWarning: This DataLoader will create 48 worker processes in total. Our suggested max number of worker in current system is 4, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
   warnings.warn(_create_warning_msg(
 wandb: Waiting for W&B process to finish... (success).
-wandb: - 0.000 MB of 0.000 MB uploaded (0.000 MB deduped)wandb: \ 0.000 MB of 0.000 MB uploaded (0.000 MB deduped)wandb: | 0.000 MB of 0.000 MB uploaded (0.000 MB deduped)wandb: / 0.000 MB of 0.006 MB uploaded (0.000 MB deduped)wandb: - 0.000 MB of 0.006 MB uploaded (0.000 MB deduped)wandb: \ 0.006 MB of 0.006 MB uploaded (0.000 MB deduped)wandb: | 0.006 MB of 0.006 MB uploaded (0.000 MB deduped)wandb: / 0.006 MB of 0.006 MB uploaded (0.000 MB deduped)wandb: - 0.006 MB of 0.006 MB uploaded (0.000 MB deduped)wandb: \ 0.006 MB of 0.006 MB uploaded (0.000 MB deduped)wandb: | 0.006 MB of 0.006 MB uploaded (0.000 MB deduped)wandb:                                                                                
+wandb: - 0.000 MB of 0.000 MB uploaded (0.000 MB deduped)
+wandb: \ 0.000 MB of 0.000 MB uploaded (0.000 MB deduped)
+wandb: | 0.000 MB of 0.000 MB uploaded (0.000 MB deduped)
+wandb: / 0.000 MB of 0.006 MB uploaded (0.000 MB deduped)
+wandb: - 0.000 MB of 0.006 MB uploaded (0.000 MB deduped)
+wandb: \ 0.006 MB of 0.006 MB uploaded (0.000 MB deduped)
+wandb: | 0.006 MB of 0.006 MB uploaded (0.000 MB deduped)
+wandb: / 0.006 MB of 0.006 MB uploaded (0.000 MB deduped)
+wandb: - 0.006 MB of 0.006 MB uploaded (0.000 MB deduped)
+wandb: \ 0.006 MB of 0.006 MB uploaded (0.000 MB deduped)
+wandb: | 0.006 MB of 0.006 MB uploaded (0.000 MB deduped)
+wandb:                                                                                
 wandb: 
 wandb: Run summary:
 wandb:                    epoch 10
