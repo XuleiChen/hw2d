@@ -1,8 +1,4 @@
-# Gamma_n Comparison for FFNO and Numerical Solver
-
-1. Data for various values of parameter `c1` was generated using a numerical solver on a grid size of 64x64, covering the time range \( t = 0 \) to \( t = 200 \).
-2. Using identical initial conditions as the numerical solver, a trained Fourier Neural Operator (FFNO) was tasked to infer the data for \( t = 0 \) to \( t = 200 \).
-3. The resulting values of \( \Gamma_n \pm \delta \Gamma_n \) from the FFNO's inference are shown in comparison to the numerical solver's output:
+1. Using a numerical solver, data with different parameter values of \( c_1 \) and a grid size of 64x64 was generated for \( t = 0 \) to \( t = 200 \). A trained FFNO was given the same initial values as the numerical solver to predict data for \( t = 0 \) to \( t = 200 \). The computed values of \( \Gamma_n \pm \delta \Gamma_n \) are shown below:
 
 | c1  | Numerical Solver \( \Gamma_n \pm \delta \Gamma_n \) | FFNO \( \Gamma_n \pm \delta \Gamma_n \) |
 |-----|-----------------------------------------------------|-----------------------------------------|
@@ -11,3 +7,8 @@
 | 1.0  | 0.22 ± 0.23                                        | 0.22 ± 0.22                             |
 | 1.5  | 0.09 ± 0.14                                        | 0.09 ± 0.14                             |
 
+2. For \( c_1 = 1.0 \), changing the grid resolution results in the following \( \Gamma_n \pm \delta \Gamma_n \):
+| Grid size | Numerical solver \( \Gamma_n \pm \sigma_{\Gamma_n} \) | F-FNO \( \Gamma_n \pm \sigma_{\Gamma_n} \) |
+|-----------|-------------------------------------------------------|-------------------------------------------|
+| 64x64     | 0.22 ± 0.23                                          | 0.22 ± 0.22                               |
+| 128x128   | 0.26 ± 0.22                                          | 0.25 ± 0.23                               |
