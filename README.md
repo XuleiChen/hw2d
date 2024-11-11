@@ -8,7 +8,7 @@
 | 1.5  | 0.09 ± 0.14                                        | 0.09 ± 0.14                             |
 
 2. For \( c_1 = 1.0 \), changing the grid resolution results in the following \( \Gamma_n \pm \delta \Gamma_n \):
-| Grid size | Numerical solver \( \Gamma_n \pm \sigma_{\Gamma_n} \) | F-FNO \( \Gamma_n \pm \sigma_{\Gamma_n} \) |
-|-----------|-------------------------------------------------------|-------------------------------------------|
+| Grid size | Numerical solver \( \Gamma_n \pm \sigma_{\Gamma_n} \)| F-FNO \( \Gamma_n \pm \sigma_{\Gamma_n} \)|
+|-----------|------------------------------------------------------|-------------------------------------------|
 | 64x64     | 0.22 ± 0.23                                          | 0.22 ± 0.22                               |
 | 128x128   | 0.26 ± 0.22                                          | 0.25 ± 0.23                               |
