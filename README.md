@@ -20,3 +20,4 @@ For \( c_1 = 1.0 \), changing the grid resolution results in the following \( \G
 | 64x64     | 0.22 ± 0.23                                           | 0.22 ± 0.22                                |
 | 128x128   | 0.26 ± 0.22                                           | 0.25 ± 0.23                                |
 
+
