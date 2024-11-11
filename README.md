@@ -4,7 +4,7 @@
 
 Using a numerical solver, data with different parameter values of \( c_1 \) and a grid size of 64x64 was generated for \( t = 0 \) to \( t = 200 \). A trained FFNO was given the same initial values as the numerical solver to predict data for \( t = 0 \) to \( t = 200 \). The computed values of \( \Gamma_n \pm \delta \Gamma_n \) are shown below:
 
-| c1  | Numerical Solver \( \Gamma_n \pm \delta \Gamma_n \) | FFNO \( \Gamma_n \pm \delta \Gamma_n \) |
+| c1  | Numerical Solver \( \Gamma_n \pm \delta \Gamma_n \) | FFNO `\Gamma_n \pm \delta \Gamma_n` |
 |-----|-----------------------------------------------------|-----------------------------------------|
 | 0.01 | 1.52 ± 1.46                                        | 1.53 ± 1.40                             |
 | 0.5  | 0.45 ± 0.33                                        | 0.44 ± 0.32                             |
