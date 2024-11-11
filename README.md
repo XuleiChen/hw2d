@@ -1,4 +1,4 @@
-## 1. Numerical Solver vs. FFNO Results for Different \( c_1 \) Values
+## 1. Numerical Solver vs. FFNO Results for Different $ c_1 $ Values
 
 Using a numerical solver, data with different parameter values of \( c_1 \) and a grid size of 64x64 was generated for \( t = 0 \) to \( t = 200 \). A trained FFNO was given the same initial values as the numerical solver to predict data for \( t = 0 \) to \( t = 200 \). The computed values of \( \Gamma_n \pm \delta \Gamma_n \) are shown below:
 
